@@ -1,4 +1,4 @@
-# 1. Fixed locale settings warning on Debian 9 (stretch) with [Ansible](https://www.ansible.com/)
+# 1. Fix locale settings warning on Debian 9 (stretch) with [Ansible](https://www.ansible.com/)
 
 1. Clone this repository locally:
 ```https://github.com/moovs/setting-locale-settings.git```
