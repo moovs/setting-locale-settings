@@ -1,0 +1,25 @@
+---
+- hosts: all
+  tasks:
+
+# set missing locales to /etc/default/locale
+  - name: add to file /default/locale
+    shell: 'echo "LANGUAGE=en_US.UTF-8" >> /etc/default/locale'
+  - name:
+    shell: 'echo "LC_ALL=en_US.UTF-8" >> /etc/default/locale'
+  - name:
+    shell: 'echo "LANG=en_US.UTF-8" >> /etc/default/locale'
+
+# generate missing locale with locale
+  - name: locale gen
+    locale_gen:
+      name: en_US.UTF-8
+      state: present
+
+# dpkg-reconfigure locales
+  - name: debconf
+    debconf:
+      name: locales
+      question: locales/locales_to_be_generated
+      value: en_US.UTF-8 UTF-8
+      vtype: multiselect
