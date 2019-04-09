@@ -1,7 +1,7 @@
 # 1. Fixed locale settings warning on Debian 9 (stretch) with [Ansible](https://www.ansible.com/)
 
 1. Clone this repository locally:
-``````
+```https://github.com/moovs/setting-locale-settings.git```
 2. Add your ssh-key to the host when you want to fix warning:
 ```ssh-copy-id -i ~/.ssh/id_rsa.pub user@host```
 - This logs into the server host, and copies keys to the server, and configures them to grant access by adding them to the authorized_keys file.
