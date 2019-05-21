@@ -13,7 +13,3 @@ my_domain ansible_ssh_host=192.168.0.0 ansible_ssh_user=my_user
 4. And run: 
 ```ansible-playbook -i hosts ./roles/locale/main.yml```
 5. You have fixed locale settings warning on your host :alien:
-
-***
-### Author
-[Nikolay Ovsiannikov](https://www.linkedin.com/in/nikolay-ovsiannikov/) - LinkedIn
