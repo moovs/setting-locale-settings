@@ -1,2 +1,2 @@
 [your_group]
-ac005 ansible_ssh_host=204.74.252.84 ansible_ssh_user=your_user
+your_host ansible_ssh_host=your_ip ansible_ssh_user=your_user
